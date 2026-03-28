@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beach Holiday Resort</title><style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+
+/* NAVBAR */
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.7);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:#fff;
+z-index:1000;
+}
+
+nav h2{margin-left:20px}
+
+nav ul{
+display:flex;
+list-style:none;
+margin-right:20px;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:orange;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+font-size:20px;
+margin:10px 0;
+}
+
+.btn{
+padding:12px 25px;
+background:orange;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+/* ABOUT */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+/* ROOMS */
+.rooms{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+width:300px;
+margin:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+}
+
+.card h3{
+padding:10px;
+}
+
+/* GALLERY */
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.gallery img{
+width:280px;
+margin:10px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* FOOTER */
+footer{
+background:black;
+color:white;
+padding:20px;
+}
+
+</style></head><body><nav>
+<h2>Holiday Resort</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Rooms</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav><div class="hero">
+  <div class="hero">
+    <h1>Puri Beach Resort</h1>
+</div>
+<div>
+
+<p><br>Enjoy Luxury Stay Near Sea Beach</p> </br>
+<button class="btn">Book Now</button>
+</div>
+</div><section>
+<h2>About Resort</h2>
+<p>Best resort near Puri beach with luxury rooms, swimming pool & sea view.</p>
+</section><section>
+<h2>Our Rooms</h2>
+<div class="rooms"><div class="card">
+<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+<h3>Deluxe Room</h3>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<h3>Family Room</h3>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+<h3>Luxury Suite</h3>
+</div></div>
+</section><section>
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb">
+<img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa">
+<img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461">
+</div>
+</section>
+<section>
+    <h2>Book Your Stay</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Email" required><br><br>
+        <input type="date" required><br><br>
+        <select>
+            <option>Deluxe Room</option>
+            <option>Family Room</option>
+            <option>Luxury Suite</option>
+        </select><br><br>
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+<section>
+    <h2>Our Location</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18..."
+        width="100%" height="300" style="border:0;">
+    </iframe>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>Email: info@resort.com</p>
+<p>Phone: +91 9876543210</p>
+</section><footer>
+<p>© 2026 Holiday Resort</p>
+</footer></body>
+</html>
